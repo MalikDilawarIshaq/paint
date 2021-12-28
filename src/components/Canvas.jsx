@@ -186,9 +186,9 @@ function Canvas() {
 
   return (
     <div>
-      <canvas
+            <canvas
         ref={canvasRef}
-        width={1270}
+        width={1260}
         height={535}
         style={{ border: '1px solid #000', margin: '5px', cursor: 'crosshair' }}
         onMouseDown={mouseDown}

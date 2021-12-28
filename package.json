@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "cross-env": "^7.0.3",
     "eslint-config-airbnb": "^19.0.3",
     "eslint-config-airbnb-base": "^15.0.0",
     "jest-canvas-mock": "^2.3.1",
@@ -18,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "cross-env CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "elint": "eslint .",
     "prepare": "husky install",
